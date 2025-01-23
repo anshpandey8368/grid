@@ -1,0 +1,168 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(231, 216, 219);
+}
+
+.wrapper {
+    width: 70%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    background-color: red;
+    grid-column: span 3;
+    grid-row: span 2;
+    border-radius: 10px;
+    position: relative;
+}
+
+.upper {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    position: absolute;
+    z-index: 1;
+}
+
+.upper h1 {
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 1rem 10rem;
+    text-align: center;
+}
+
+.upper button {
+    color: black;
+    background-color: #90EDB3;
+    border: none;
+    border-radius: 50px;
+    padding: 0.8rem 2rem;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.lower {
+    width: 100%;
+    height: 100%;
+    background-color: #90EDB3;
+    border-radius: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: -1;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.one {
+    background-color: blue;
+    border-radius: 10px;
+}
+
+.two {
+    background-color: blueviolet;
+    grid-row: span 2;
+    border-radius: 10px;
+}
+
+.three {
+    background-color: brown;
+    border-radius: 10px;
+}
+
+.four {
+    background-color: cadetblue;
+    grid-row: span 2;
+    border-radius: 10px;
+}
+
+.five {
+    background-color: chartreuse;
+    border-radius: 10px;
+}
+
+.six {
+    background-color: chocolate;
+    border-radius: 10px;
+}
+
+.seven {
+    background-color: crimson;
+    width: 130%;
+    border-radius: 10px;
+}
+
+.eight {
+    width: 70%;
+    background-color: rgb(0, 94, 255);
+    display: flex;
+    justify-self: flex-end;
+    border-radius: 10px;
+}
+
+
+@media  (max-width: 768px) {
+    .wrapper {
+        width: 95%;
+        height: 50%;
+    }
+    
+    .card h1 {
+        font-size: 20px;
+        padding: 0.4rem 1rem;
+    }
+
+    .card button {
+        font-size: 10px;
+        padding: 0.4rem 1rem;
+    }
+}
+
+
+@media  (max-width: 480px) {
+    .wrapper {
+        width: 95%;
+        height: 50%;
+    }
+    
+    .card h1 {
+        font-size: 18px;
+        padding: 0.3rem 0.9rem;
+    }
+
+    .card button {
+        font-size: 8px;
+        padding: 0.3rem 0.9rem;
+    }
+}
