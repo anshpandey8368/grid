@@ -131,11 +131,58 @@ img {
     border-radius: 10px;
 }
 
+@media  (max-width: 1024px) {
+    .wrapper {
+        width: 90%;
+        height: 65%;
+        gap: 15px;
+    }
+
+    .card {
+        width: 99%;
+        height: 99%;
+    }     
+
+    .upper {
+        padding: 1rem 13rem;
+    }
+
+    .lower {
+        top: 6px;
+        left: 6px;
+    }   
+
+    .card h1 {
+        font-size: 20px;
+        padding: 0.4rem 1rem;
+    }
+
+    .card button {
+        font-size: 10px;
+        padding: 0.4rem 1rem;
+    }
+}
+
 
 @media  (max-width: 768px) {
     .wrapper {
         width: 95%;
         height: 50%;
+        gap: 15px;
+    }
+
+    .card {
+        width: 99%;
+        height: 99%;
+    }
+
+    .lower {
+        top: 6px;
+        left: 6px;
+    }
+
+    .upper {
+        padding: 1rem 6rem;
     }
     
     .card h1 {
@@ -153,7 +200,22 @@ img {
 @media  (max-width: 480px) {
     .wrapper {
         width: 95%;
-        height: 50%;
+        height: 40%;
+        gap: 10px;
+    }
+
+    .card {
+        width: 98%;
+        height: 98%;
+    }
+
+    .upper {
+        padding: 1rem 3rem;
+    }
+
+    .lower {
+        top: 4px;
+        left: 4px;
     }
     
     .card h1 {
